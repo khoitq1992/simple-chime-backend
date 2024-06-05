@@ -1,0 +1,33 @@
+{
+  "name": "my-chime-backend",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with Fastify-CLI.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap \"test/**/*.test.js\"",
+    "start": "fastify start -w -l info -P app.js --port 3001",
+    "dev": "fastify start -w -l info -P app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-chime": "^3.588.0",
+    "@aws-sdk/client-chime-sdk-identity": "^3.588.0",
+    "@aws-sdk/client-chime-sdk-meetings": "^3.588.0",
+    "@aws-sdk/client-chime-sdk-messaging": "^3.588.0",
+    "@fastify/autoload": "^5.0.0",
+    "@fastify/sensible": "^5.0.0",
+    "aws-sdk": "^2.1633.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.0.0",
+    "fastify-cli": "^5.4.2",
+    "fastify-plugin": "^4.0.0"
+  },
+  "devDependencies": {
+    "tap": "^16.1.0"
+  }
+}
